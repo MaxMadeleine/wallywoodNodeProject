@@ -1,0 +1,25 @@
+{
+  "name": "wallywoodnodeproject",
+  "version": "1.0.0",
+  "description": "Basic boiler plate",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxMadeleine/wallywoodNodeProject.git"
+  },
+  "author": "Max Madeleine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxMadeleine/wallywoodNodeProject/issues"
+  },
+  "homepage": "https://github.com/MaxMadeleine/wallywoodNodeProject#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "node-modules": "^0.0.1"
+  }
+}
