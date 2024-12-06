@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import cors from "cors";
 dotenv.config();
 import { postersController } from "./controllers/postersController.js";
 import { genresController } from "./controllers/genresController.js";
@@ -8,8 +9,8 @@ import { userProfilesController } from "./controllers/userProfilesController.js"
 import { userRatingsController } from "./controllers/userRatingsController.js";
 
 const port = process.env.PORT || 4000;
+const app = express();
 
-const cors = require('cors');
 app.use(cors());
 
 app.use(cors({
@@ -18,7 +19,7 @@ app.use(cors({
     allowedHeaders: ['Content-Type']
 }));
 
-const app = express();
+
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
